@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+</head>
+<body>
+    <a href="index.html" id="logo">
+        <img src="poze/nou_logo.png" alt="Visit Romania">
+    </a>
+    <div class="login-container">
+        <h2>Login</h2>
+        <% if (errorMessages && errorMessages.length > 0) { %>
+            <div class="error-messages">
+                <% errorMessages.forEach(function(message) { %>
+                    <p class="error-message"><%= message %></p>
+                <% }) %>
+            </div>
+        <% } %>
+        <form action="/login" method="post">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            <input type="submit" value="Login">
+        </form>
+        <p>Don't have an account? <a href="register">Create one</a></p>
+    </div>
+</body>
+</html>

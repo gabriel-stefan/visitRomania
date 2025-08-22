@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit Romania</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <h1 id="fade-in-text"><span class="visit">VISIT</span><span class="blue">RO</span><span class="yellow">MAN</span><span class="red">IA</span></h1>
+        <% if (user) { %>
+            <form id="logout-form" action="/logout" method="post">
+                <button type="submit" id="logout-button">log out</button>
+            </form>
+        <% } else { %>
+            <a href="/login" id="login-link">log in</a>
+        <% } %>
+        <a href="/weather" id="sunny-button">
+            <img src="poze/vreme.png" alt="Sunny">
+        </a>
+    </header>
+    <nav id="menu">
+        <a href="/general">general information</a>
+        <a href="/geografie">geography</a>
+        <a href="/visa">visa travel</a>
+        <a href="/other">other</a>
+    </nav>
+    <script src="/js/script.js"></script>
+</body>
+</html>

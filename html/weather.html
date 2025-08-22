@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="css/weather.css">
+</head>
+<body>
+    <header>
+        <a href="index" id="logo">
+            <img src="poze/nou_logo.png" alt="Visit Romania">
+        </a>
+    </header>
+    <main>
+        <div id="weather-app" class="container">
+            <input type="search" id="location-search" placeholder="Search for a location">
+            <div id="error-message" class="error-message" style="display: none;"></div> <!-- Add this line -->
+            <div id="weather-info">
+                <div id="city-name">
+                    <p id="location"></p>
+                    <div id="weather-icon">
+                        <img id="weather-img" src="/vreme/sunny.png" alt="Weather Icon">
+                    </div>
+                </div>
+                <div id="weather-details">
+                    <p id="temperature">Temperature: </p>
+                    <p id="conditions">Conditions: </p>
+                    <p id="humidity">Humidity: <span id="humidity-value"></span></p>
+                    <p id="wind-speed">Wind: <span id="wind-speed-value"></span></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/weather.js" defer></script>
+</body>
+</html>

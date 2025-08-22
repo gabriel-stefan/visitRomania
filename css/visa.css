@@ -1,0 +1,89 @@
+#page-title {
+    font-family: Arial, sans-serif; 
+    font-weight: bolder;
+    color: rgb(0, 0, 0); 
+    opacity: 0; 
+    animation: fadeIn 1s ease-in-out forwards; 
+    margin-left: 100px;
+    margin-top: 200px;
+}
+
+.sub-title {
+    font-family: Arial, sans-serif; 
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+    opacity: 0; 
+    animation: fadeIn 1s ease-in-out forwards; 
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1; 
+    }
+}
+
+body {
+    background-color: rgba(252,252,252,255);
+}
+
+#eu:hover {
+    color: rgba(0,51,153,255); 
+    transition: color 0.5s;
+    cursor: default;
+}
+
+#logo img{
+    position: absolute;
+    top: 40px;
+    left: 100px;
+    width: 100px;
+    height: auto;
+    opacity: 0; 
+    animation: fadeIn 1s ease-in-out forwards; 
+}
+
+#info3 {
+    border: none;
+}
+
+#info1, #info2, #info3 {
+    font-family: Arial, Helvetica, sans-serif, sans-serif; 
+    font-weight: 100;
+    color: rgb(53, 53, 53); 
+    opacity: 0; 
+    animation: fadeIn 1s ease-in-out forwards; 
+    margin-left: 100px;
+    margin-top: 20px;
+    margin-right: 80px;
+    text-decoration: none;
+}
+
+#image{
+    top: 200px;
+    margin-left: 70px;
+    width: 500px;
+    height: auto;
+    opacity: 0; 
+    animation: fadeIn 1s ease-in-out forwards; 
+}
+
+@media (max-width: 37.5em) { 
+    #page-title, .sub-title, #info1, #info2, #info3 {
+        margin-left: 6.25em; 
+        margin-top: 12.5em; 
+    }
+
+    #logo img {
+        top: 2.5em; 
+        left: 6.25em; 
+        width: 6.25em; 
+    }
+
+    #image {
+        top: 12.5em; 
+        margin-left: 4.375em; 
+        width: 31.25em; 
+    }
+}
